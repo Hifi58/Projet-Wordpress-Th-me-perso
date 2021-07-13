@@ -7,3 +7,24 @@ Description : Mon premier thème
 Requires at least: WordPress 5.0
 Version: 0.5
 */
+
+.menu {
+    position: fixed;
+    top: 0px;
+}
+
+.admin-bar .menu {
+	top: 32px;
+}
+
+/*bannière*/
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.logo{
+    width: 100%;
+    height: auto;
+}
