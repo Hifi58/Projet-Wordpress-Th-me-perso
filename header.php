@@ -8,6 +8,6 @@
 </head>
 
 <body <?php body_class(); ?>>
-   
+<?php wp_nav_menu( array( 'theme_location' => 'main' ) ); ?>
 
     <?php wp_body_open(); ?>
