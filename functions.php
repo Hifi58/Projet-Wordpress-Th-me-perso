@@ -1,20 +1,31 @@
 <?php
 
-//Ceci ajoute la prise en charge des images mises en avant
+// Ceci ajoute la prise en charge des images mises en avant
 add_theme_support( 'post-thumbnails' );
 
-//Ceci ajout automatiquement le titre du site dans l'en-tête
+// Ceci définie la taille des images mises en avant
+set_post_thumbnail_size( 300, 300, true );
+
+// Ceci ajout automatiquement le titre du site dans l'en-tête
 
 add_theme_support( 'title-tag' );
 
-//Ceci définit l'emplacement du menu de navigation
+// Ceci lie le fichier style.css
+wp_enqueue_style( 
+    'First Step',
+    get_stylesheet_uri(), 
+    array(), 
+    '0.5'
+);
+
+// Ceci définit l'emplacement du menu de navigation
 
 register_nav_menus( array(
 	'main' => 'Menu Principal',
 	'footer' => 'Bas de page',
 ) );
 
-//création du type de post apprenants
+// création du type de post apprenants
 
 function firststep_register_post_types() {
 	

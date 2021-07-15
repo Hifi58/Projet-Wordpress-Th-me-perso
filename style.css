@@ -17,14 +17,114 @@ Version: 0.5
 	top: 32px;
 }
 
-/*bannière*/
-
-img {
-    max-width: 100%;
-    height: auto;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.logo{
-    width: 100%;
-    height: auto;
+body{
+    background-color: hsl(0, 0%, 100%);
+    color: white;
+}
+
+h1{
+    display: none;
+}
+
+ul a{
+    color: white;
+    text-decoration: none;
+}
+/*navigation*/
+
+.site__header__menu{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    font-size: 1.5em;
+    background-color: hsl(244, 28%, 12%);
+    height: 10vh;
+    color: hsl(244, 28%, 12%);;
+}
+
+.page_item{
+    margin: auto;
+}
+
+.site__header__menu a{
+    text-decoration: none;
+    color: hsl(0, 0%, 89%);
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+/*formulaire de rechercher*/
+
+.searchform{
+    margin-top: 20px;
+    margin-left: 40px;
+}
+
+.text{
+    border: none;
+    border-bottom: 1px hsl(244, 28%, 12%) solid;
+}
+
+.text:focus{
+    outline: none;
+}
+
+.button{
+    margin-left: 20px;
+    padding: 5px;
+    cursor: pointer;
+    background-color: whitesmoke;
+    border: 1px solid gray;
+    border-radius: 2px;
+}
+
+.button:hover{
+    background-color: lightgray;
+}
+
+
+::placeholder{
+    font-size: 1.2em;
+}
+/*galery*/
+
+.blocks-gallery-grid{
+    height: 600px;
+    width: 600px;
+}
+
+/*articles*/
+
+.article{
+    display: flex;
+    flex-direction: column;
+    width: 90vw;
+}
+
+.card_article{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding: 20px;
+    margin-right: 10px;
+    border: solid hsla(231, 79%, 17%, 0.664) 1px;
+    background-color: hsla(231, 81%, 13%, 0.664);
+    width: 70%;
+    margin: auto;
+}
+
+.card_article li{
+    line-height: 2;
+    letter-spacing: 2px;
+}
+
+.a_echo{
+    color: hsl(0, 0%, 4%)
 }

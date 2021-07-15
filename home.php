@@ -15,25 +15,21 @@
 ?>
 <h1><?php echo $title; ?></h1>
 
-	<?php if( have_posts() ) : while( have_posts() ) : the_post(); ?>
-  
-		<article class="post">
-			<h2><?php the_title(); ?></h2>
-      
-        	<?php the_post_thumbnail(); ?>
-            
-            <p class="post__meta">
-                Publié le <?php the_time( get_option( 'date_format' ) ); ?> 
-                par <?php the_author(); ?> • <?php comments_number(); ?>
-            </p>
-            
-      		<?php the_excerpt(); ?>
-              
-      		<p>
-                <a href="<?php the_permalink(); ?>" class="post__link">Lire la suite</a>
-            </p>
-		</article>
-
-	<?php endwhile; endif; ?>
+<h3>Derniers articles</h3>
+<ul class="article">
+<?php
+$args = array( 'numberposts' => 9, 'order'=> 'DESC', 'orderby' => 'date' );
+$postslist = get_posts( $args );
+foreach ($postslist as $post) :  setup_postdata($post); ?> 
+<div class="card_article">
+    <li style="list-style-type: none;" class="li_article"><?php the_post_thumbnail(); ?></li>
+    <li style="list-style-type: none;" class="li_article"><?php the_title(); ?></li>
+    <li style="list-style-type: none;" class="li_article"><?php the_excerpt(); ?></li>
+    <li style="list-style-type: none;" ><a class="a_echo" href="<?php the_permalink() ?>" rel="bookmark"><?php echo "Lire l'article" ?></a></li>
+    <li style="list-style-type: none;" class="li_article"><?php the_date(); ?></li>
+    <li style="list-style-type: none;" class="li_article"><?php the_category(); ?></li>
+</div>
+<?php endforeach; ?>
+</ul>
     <?php get_template_part( 'archive' ); ?>
 <?php get_footer(); ?>
