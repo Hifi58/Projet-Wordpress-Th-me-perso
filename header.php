@@ -8,6 +8,16 @@
 </head>
 
 <body <?php body_class(); ?>>
-<?php wp_nav_menu( array( 'theme_location' => 'main' ) ); ?>
+
+<?php	wp_nav_menu( 
+        array( 
+            'theme_location' => 'main', 
+            'container' => 'ul', // afin d'éviter d'avoir une div autour 
+            'menu_class' => 'site__header__menu', // ma classe personnalisée 
+        ) 
+    ); 
+?>
+
+<?php get_search_form(); ?>
 
     <?php wp_body_open(); ?>
