@@ -1,5 +1,0 @@
-<table class="tftable" border="0">
-<tr><td> <img src="http://localhost/wordpress_blog_promo/wp-content/uploads/2021/07/Alice-150x150.jpg" /></td><td><img src="http://localhost/wordpress_blog_promo/wp-content/uploads/2021/07/Anthony-2-150x150.jpg" /> </td><td> <img src="http://localhost/wordpress_blog_promo/wp-content/uploads/2021/07/Louis-150x150.jpg" /></td></tr>
-<tr><td><img src="http://localhost/wordpress_blog_promo/wp-content/uploads/2021/07/Julien-2-150x150.jpg" /> </td><td><img src="http://localhost/wordpress_blog_promo/wp-content/uploads/2021/07/Erwann-150x150.jpg" /> </td><td><img src="http://localhost/wordpress_blog_promo/wp-content/uploads/2021/07/Nina-150x150.jpg" /> </td></tr>
-<tr><td><img src="http://localhost/wordpress_blog_promo/wp-content/uploads/2021/07/Quentin-150x150.jpg" /></td><td><img src="http://localhost/wordpress_blog_promo/wp-content/uploads/2021/07/Tomy-150x150.jpg" /></td><td><img src="http://localhost/wordpress_blog_promo/wp-content/uploads/2021/07/Arsim-150x150.jpg"/> </td></tr>
-</table>
